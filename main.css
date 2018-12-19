@@ -4,6 +4,8 @@
   --medium: 500;
   --demibold: 600;
   --black-transparent: linear-gradient(rgba(0,0,0,0.34), rgba(0,0,0,0.34));
+  --white-transparent: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6));
+  --primary-transparent: linear-gradient(rgba(19,77,171,0.6), rgba(19,77,171,0.6));
   --primary: #134DAB;
   --rounded: 5px;
 }
@@ -104,12 +106,14 @@ a {
   font-size: 44px;
   line-height: 48px;
   margin: 32px 0;
-  text-align: center;
+}
+
+.above-the-fold__text {
+  margin: auto;
+  max-width: 450px;
 }
 
 .centered {
-  margin: auto;
-  max-width: 450px;
   text-align: center;
 }
 
@@ -137,8 +141,17 @@ a {
   left: 33px;
 }
 
+.vertical-spacer {
+  background-color: #fff;
+  height: 76px;
+  width: 1px;
+  position: absolute;
+  left: 50%;
+  bottom: 106px;
+}
 
-/* Logo scroller section */
+
+/* Logo scroller (second block) */
 
 .logo-scroller {
   height: 254px;
@@ -149,6 +162,76 @@ a {
   margin-left: calc((2003px - 100vw) / -2);
 }
 
+
+/* Solutions (third block) */
+
+.solutions {
+  height: 720px;
+}
+
+.solutions__left {
+  background-color: var(--primary);
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+
+.solutions__content {
+  width: 563px;
+  margin: 169px auto 121px auto;
+}
+
+.solutions__text {
+  font-size: 16px;
+  line-height: 26px;
+  text-align: justify;
+  width: 517px;
+}
+
+.selectors {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 97px auto 119px auto;
+  width: 72px;
+}
+
+.selector {
+  background: var(--white-transparent);
+  border-radius: 50%;
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+}
+
+.selector--active {
+  background: #fff;
+  height: 14px;
+  width: 14px;
+}
+
+.solutions__right {
+  float: right;
+  position: relative;
+  height: 100%;
+  width: 50%;
+}
+
+.solutions__right:after {
+  content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	display: block;
+	background: var(--primary-transparent), url('images/guyonphone.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /* Text meant only for screen readers. */
 /* From WordPress */
