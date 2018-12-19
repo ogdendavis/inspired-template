@@ -13,6 +13,7 @@ body {
   font-family: var(--main-font);
   font-weight: var(--regular);
   margin: 0;
+  overflow-x: hidden;
   padding: 0;
 }
 
@@ -134,6 +135,18 @@ a {
   position: absolute;
   bottom: 29px;
   left: 33px;
+}
+
+
+/* Logo scroller section */
+
+.logo-scroller {
+  height: 254px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 2003px;
+  margin-left: calc((2003px - 100vw) / -2);
 }
 
 
