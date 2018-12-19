@@ -3,9 +3,10 @@
   --regular: 400;
   --medium: 500;
   --demibold: 600;
-  --black-transparent: linear-gradient(rgba(0,0,0,0.34), rgba(0,0,0,0.34));
+  --black-transparent: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35));
   --white-transparent: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6));
   --primary-transparent: linear-gradient(rgba(19,77,171,0.6), rgba(19,77,171,0.6));
+  --primary-less-transparent: linear-gradient(rgba(19,77,171,0.9), rgba(19,77,171,0.9));
   --primary: #134DAB;
   --rounded: 5px;
 }
@@ -192,6 +193,7 @@ a {
 .solutions__text {
   font-size: 16px;
   line-height: 26px;
+  margin-bottom: 97px;
   text-align: justify;
   width: 517px;
 }
@@ -201,7 +203,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 97px auto 119px auto;
+  margin: auto;
   width: 72px;
 }
 
@@ -258,6 +260,97 @@ a {
 .services__image {
   display: block;
   margin: 50px auto;
+}
+
+
+/* Testimonials (fifth block) */
+
+.testimonials {
+  box-sizing: border-box;
+  height: 606px;
+  padding-top: 62px;
+  position: relative;
+  width: 100%;
+}
+
+.testimonials:after {
+  content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	display: block;
+	background: var(--primary-less-transparent), url('images/testimonialbg.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.testimonials__container {
+  margin: 51px auto 29px auto;
+  max-width: 1140px;
+  position: relative;
+}
+
+.testimonial {
+  display: block;
+  font-size: 18px;
+  line-height: 26px;
+  margin: auto;
+  max-width: 754px;
+  text-align: center;
+}
+
+.scroll {
+  background-color: #1C1C1C;
+  border-radius: 50%;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  transform: translateY(50%);
+  width: 60px;
+}
+
+.scroll--left {
+  left: 0;
+}
+
+.scroll--right {
+  right: 0;
+}
+
+.scroll-arrow {
+  display: block;
+}
+
+.scroll-arrow--left {
+  margin: 19px 25px 18px 21px;
+}
+
+.scroll-arrow--right {
+  margin: 19px 21px 18px 25px;
+}
+
+.testimonials__footer {
+  margin-top: 29px;
+  text-align: center;
+}
+
+.testimonial__author {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 6px;
+}
+
+.testimonial__author-title {
+  letter-spacing: 1.5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 0;
+  margin-bottom: 41px;
 }
 
 
