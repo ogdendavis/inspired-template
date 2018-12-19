@@ -1,7 +1,84 @@
 :root {
-
+  --body-font: 'Open Sans', sans-serif;
+  --head-font: 'Montserrat', sans-serif;
+  --black-transparent: linear-gradient(rgba(0,0,0,0.34), rgba(0,0,0,0.34));
+  --primary: #134DAB;
+  --rounded: 5px;
 }
 
 body {
-  background-color: blue;
+  color: #fff;
+  font-family: var(--body-font);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* Styles organized by visual blocks */
+
+/* Above the fold (first block) */
+
+.above-the-fold {
+  position: relative;
+  padding-top: 50px;
+}
+
+.above-the-fold:after {
+  content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	display: block;
+	background: var(--black-transparent), url('images/heroimage.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  box-sizing: border-box;
+  margin: auto;
+  position: relative;
+  width: 70vw;
+}
+
+.top-logo {
+  width: 200px;
+}
+
+.top-nav {
+  display: inline-block;
+  list-style: none;
+  position: absolute;
+  right: 0;
+}
+
+.top-nav ul {
+  display: inline-block;
+}
+
+.top-nav li {
+  display: inline-block;
+  font-size: 15px;
+  margin-right: 30px;
+}
+
+.button {
+  background-color: var(--primary);
+  border-radius: var(--rounded);
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 18px;
+  height: 50px;
+  padding: 12px;
+  width: 200px;
+  text-align: center;
 }
