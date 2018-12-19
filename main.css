@@ -1,6 +1,8 @@
 :root {
-  --body-font: 'Open Sans', sans-serif;
-  --head-font: 'Montserrat', sans-serif;
+  --main-font: 'Nunito', sans-serif;
+  --regular: 400;
+  --medium: 500;
+  --demibold: 600;
   --black-transparent: linear-gradient(rgba(0,0,0,0.34), rgba(0,0,0,0.34));
   --primary: #134DAB;
   --rounded: 5px;
@@ -8,7 +10,8 @@
 
 body {
   color: #fff;
-  font-family: var(--body-font);
+  font-family: var(--main-font);
+  font-weight: var(--regular);
   margin: 0;
   padding: 0;
 }
@@ -26,6 +29,7 @@ a {
 .above-the-fold {
   position: relative;
   padding-top: 50px;
+  padding-bottom: 262px;
 }
 
 .above-the-fold:after {
@@ -43,8 +47,11 @@ a {
   background-size: cover;
 }
 
+/* Header inside above-the-fold */
+
 .header {
   box-sizing: border-box;
+  font-weight: var(--demibold);
   margin: auto;
   position: relative;
   width: 70vw;
@@ -81,4 +88,67 @@ a {
   padding: 12px;
   width: 200px;
   text-align: center;
+}
+
+/* Content in above-the-fold */
+
+.above-the-fold__content {
+  margin: auto;
+  font-size: 16px;
+  width: 550px;
+}
+
+.section-head {
+  font-weight: var(--demibold);
+  font-size: 44px;
+  line-height: 48px;
+  margin: 32px 0;
+  text-align: center;
+}
+
+.centered {
+  margin: auto;
+  max-width: 450px;
+  text-align: center;
+}
+
+/* Drawing the play button */
+
+.play-button--round {
+  background: var(--primary);
+  border-radius: 50%;
+  height: 80px;
+  margin: 16px auto;
+  position: relative;
+  width: 80px;
+}
+
+.play-button__triangle {
+  box-sizing: border-box;
+  border-color: transparent transparent transparent #fff;
+  border-style: solid;
+  border-width: 12px 0px 12px 18px;
+  background: var(--primary);
+  height: 23px;
+  width: 18px;
+  position: absolute;
+  bottom: 29px;
+  left: 33px;
+}
+
+
+/* Text meant only for screen readers. */
+/* From WordPress */
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
 }
