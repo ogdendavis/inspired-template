@@ -8,6 +8,7 @@
   --primary-transparent: linear-gradient(rgba(19,77,171,0.6), rgba(19,77,171,0.6));
   --primary-less-transparent: linear-gradient(rgba(19,77,171,0.9), rgba(19,77,171,0.9));
   --primary: #134DAB;
+  --gray: #7E8085;
   --rounded: 5px;
 }
 
@@ -351,6 +352,55 @@ a {
   line-height: 22px;
   margin-top: 0;
   margin-bottom: 41px;
+}
+
+
+/* Contact info & map (sixth block) */
+
+.contact {
+  box-sizing: border-box;
+  height: 820px;
+  padding-top: 60px;
+  width: 100%;
+}
+
+.contact__text {
+  color: var(--gray);
+  font-size: 16px;
+  line-height: 26px;
+  margin: -3px auto 23px auto;
+  max-width: 611px;
+}
+
+.contact__info {
+  margin: 0 auto 92px auto;
+  max-width: 780px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact__label {
+  color: var(--gray);
+  letter-spacing: 1.5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 17px;
+}
+
+.contact__value {
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.map {
+  background-color: green;
+  box-sizing: border-box;
+  height: 400px;
+  width: 100%;
 }
 
 
