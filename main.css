@@ -30,6 +30,8 @@ a {
 /* Above the fold (first block) */
 
 .above-the-fold {
+  box-sizing: border-box;
+  height: 800px;
   position: relative;
   padding-top: 50px;
   padding-bottom: 262px;
@@ -96,7 +98,7 @@ a {
 /* Content in above-the-fold */
 
 .above-the-fold__content {
-  margin: auto;
+  margin: 166px auto;
   font-size: 16px;
   width: 550px;
 }
