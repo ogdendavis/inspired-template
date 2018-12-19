@@ -120,6 +120,11 @@ a {
   text-align: center;
 }
 
+.centered-block {
+  display: block;
+  margin: auto;
+}
+
 /* Drawing the play button */
 
 .play-button--round {
@@ -235,6 +240,26 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+/* Services (fourth block) */
+
+.services {
+  box-sizing: border-box;
+  height: 780px;
+  padding-top: 110px;
+  width: 100%;
+}
+
+.primary-color {
+  color: var(--primary);
+}
+
+.services__image {
+  display: block;
+  margin: 50px auto;
+}
+
 
 /* Text meant only for screen readers. */
 /* From WordPress */
