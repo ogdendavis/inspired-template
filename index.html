@@ -36,12 +36,16 @@
       </header>
 
       <div class="above-the-fold__content">
+
         <h2 class="section-head centered">We Manage Your Tech,<br>You Manage Your Business</h2>
+
         <p class="above-the-fold__text centered">Inspired Technologies is the Southeast's leading all-inclusive technology solutions provider</p>
+
         <div class="play-button--round">
           <div class="play-button__triangle">
           </div>
         </div>
+
       </div>
 
       <div class="vertical-spacer"></div>
@@ -49,25 +53,33 @@
     </section> <!-- above-the-fold -->
 
     <section class="logo-scroller">
+
       <img src="images/vmware@1x.png" class="scroller__image" alt="VMware">
       <img src="images/microsoft@1x.png" class="scroller__image" alt="Microsoft">
       <img src="images/cisco@1x.png" class="scroller__image" alt="Cisco Systems">
       <img src="images/citrix@1x.png" class="scroller__image" alt="Citrix">
       <img src="images/adtran@1x.png" class="scroller__image" alt="ADTRAN">
+
     </section>
 
     <section class="solutions">
 
       <div class="solutions__left">
+
         <div class="solutions__content">
+
           <h2 class="section-head">COMPREHENSIVE TECHNOLOGY SOLUTIONS FOR YOUR BUSINESS</h2>
+
           <p class="solutions__text">In today’s managed services world, organizations are faced with many challenges in support of networking.  Inspired Technologies can help to ensure that your network operates efficiently, provides the highest levels of performance, and maintains the most up-to-date system and application support.</p>
+
           <div class="selectors">
             <div class="selector selector--active"></div>
             <div class="selector"></div>
             <div class="selector"></div>
           </div>
+
         </div>
+
       </div>
 
       <div class="solutions__right"></div>
@@ -91,11 +103,15 @@
       <h2 class="section-head centered">Testimonials</h2>
 
       <div class="testimonials__container">
+
         <div class="scroll scroll--left"><img src="images/arrow_left.png" alt="left arrow" class="scroll-arrow scroll-arrow--left"></div>
+
         <div class="testimonial">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
         </div>
+
         <div class="scroll scroll--right"><img src="images/arrow_right.png" alt="right arrow" class="scroll-arrow scroll-arrow--right"></div>
+
       </div>
 
       <div class="testimonials__footer">
@@ -117,25 +133,33 @@
       <p class="contact__text centered">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
       <div class="contact__info">
+
         <div class="contact__address">
           <p class="contact__label">ADDRESS</p>
           <p class="contact__value">3058 Highland Oaks Terrace</p>
         </div>
+
         <div class="contact__phone">
           <p class="contact__label">PHONE</p>
           <p class="contact__value">(850) 386-8320</p>
         </div>
+
         <div class="contact__email">
           <p class="contact__label">EMAIL</p>
           <p class="contact__value">sales@inspired-tech.net</p>
         </div>
+
       </div>
 
-      <div class="map" id="map"></div>
+      <div class="map" id="map">
+        <!-- Google map goes here! -->
+      </div>
     </section> <!-- contact -->
 
     <footer class="footer" role="footer">
+
       <div class="footer__content">
+
         <div class="footer__content--top-row">
 
           <img src="images/logo.png" class="footer-logo" alt="Inspired Technologies logo">
@@ -162,6 +186,26 @@
 
       </div>
     </footer>
+    <!-- Script to load live Google map -->
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        try {
+          // Office location
+          const office = {lat: 30.435, lng: -84.229};
+          // Map, centered on the office
+          const map = new google.maps.Map(
+              document.getElementById('map'), {zoom: 14, center: office});
+          // Marker, at the office
+          const marker = new google.maps.Marker({position: office, map: map});
+        }
+        catch(error) {
+          console.log(error);
+        }
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtYr2EE_E0HOnZ6N5NHBRSb_wmHUskHsI&callback=initMap">
+    </script>
 
   </body>
 </html>
