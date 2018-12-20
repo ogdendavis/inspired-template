@@ -139,6 +139,10 @@ a {
   width: 80px;
 }
 
+.play-button--round:hover {
+  cursor: pointer;
+}
+
 .play-button__triangle {
   box-sizing: border-box;
   border-color: transparent transparent transparent #fff;
@@ -215,6 +219,10 @@ a {
   display: inline-block;
   height: 10px;
   width: 10px;
+}
+
+.selector:hover {
+  cursor: pointer;
 }
 
 .selector--active {
@@ -313,6 +321,10 @@ a {
   top: 0;
   transform: translateY(50%);
   width: 60px;
+}
+
+.scroll:hover {
+  cursor: pointer;
 }
 
 .scroll--left {
