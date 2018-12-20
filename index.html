@@ -200,7 +200,15 @@
           const marker = new google.maps.Marker({position: office, map: map});
         }
         catch(error) {
+          // Log the error for reference
           console.log(error);
+          // Get the map div and add the --static class for styling without a Google-generated map
+          const mapDiv = document.querySelector('.map');
+          mapDiv.classList.add('map--static');
+          // Make the map work like a link -- takes user to Google Maps
+          mapDiv.onclick = () => {
+            window.open('https://www.google.com/maps/place/Inspired+Technologies+Inc/@30.43587,-84.2286804,15z/data=!4m2!3m1!1s0x0:0xef18b8f874489200?ved=2ahUKEwjZtbebja_fAhXITd8KHdGLA_4Q_BIwCnoECAUQCA');
+          }
         }
       }
     </script>

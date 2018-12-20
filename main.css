@@ -398,10 +398,19 @@ a {
 }
 
 .map {
-  background-color: green;
   box-sizing: border-box;
   height: 400px;
   width: 100%;
+}
+
+.map--static {
+  background: url('images/staticMap.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.map--static:hover {
+  cursor: pointer;
 }
 
 /* Footer (seventh & final block) */
