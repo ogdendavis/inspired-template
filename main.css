@@ -1,5 +1,6 @@
 :root {
   --main-font: 'Nunito', sans-serif;
+  --special-font: 'Poppins', sans-serif;
   --regular: 400;
   --medium: 500;
   --demibold: 600;
@@ -347,7 +348,7 @@ a {
 
 .testimonial__author-title {
   letter-spacing: 1.5px;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--special-font);
   font-size: 14px;
   line-height: 22px;
   margin-top: 0;
@@ -383,7 +384,7 @@ a {
 .contact__label {
   color: var(--gray);
   letter-spacing: 1.5px;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--special-font);
   font-size: 14px;
   line-height: 22px;
   margin-bottom: 17px;
@@ -391,7 +392,7 @@ a {
 
 .contact__value {
   color: #000;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--special-font);
   font-size: 18px;
   line-height: 30px;
 }
@@ -401,6 +402,72 @@ a {
   box-sizing: border-box;
   height: 400px;
   width: 100%;
+}
+
+/* Footer (seventh & final block) */
+
+.footer {
+  background-color: #000;
+  box-sizing: border-box;
+  height: 210px;
+  width: 100%;
+}
+
+.footer__content {
+  box-sizing: border-box;
+  height: 100%;
+  margin: auto;
+  max-width: 1140px;
+  padding-top: 32px;
+  position: relative;
+}
+
+.footer__content--top-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 34px;
+}
+
+.footer-logo {
+  width: 138px;
+}
+
+.footer-nav {
+  font-family: var(--special-font);
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  line-height: 22px;
+  width: 593px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: none;
+}
+
+.social {
+
+}
+
+.social-icon {
+  margin-left: 25px;
+}
+
+.horizontal-spacer {
+  background-color: #2A2C30;
+  height: 3px;
+  width: 100%;
+}
+
+.footer-copyright {
+  color: #7E8085;
+  font-family: var(--special-font);
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 43px;
+  text-align: center;
 }
 
 
